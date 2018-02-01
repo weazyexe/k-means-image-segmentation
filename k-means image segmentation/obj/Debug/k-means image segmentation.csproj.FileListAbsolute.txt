@@ -1,0 +1,24 @@
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.exe.config
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.exe
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.pdb
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Debug\ru\k-means image segmentation.resources.dll
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csprojResolveAssemblyReference.cache
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.MainForm.resources
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.Properties.Resources.resources
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.MainForm.ru.resources
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csproj.GenerateResource.Cache
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\ru\k-means image segmentation.resources.dll
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.exe
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.pdb
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.exe.config
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.exe
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.pdb
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.exe
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.pdb
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Debug\ru\k-means image segmentation.resources.dll
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csprojResolveAssemblyReference.cache
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.MainForm.resources
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.Properties.Resources.resources
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.MainForm.ru.resources
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csproj.GenerateResource.Cache
+E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\ru\k-means image segmentation.resources.dll

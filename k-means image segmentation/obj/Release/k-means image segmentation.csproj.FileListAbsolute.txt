@@ -1,0 +1,11 @@
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Release\k-means image segmentation.exe.config
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Release\k-means image segmentation.exe
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Release\k-means image segmentation.pdb
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\bin\Release\ru\k-means image segmentation.resources.dll
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Release\k_means_image_segmentation.MainForm.resources
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Release\k_means_image_segmentation.Properties.Resources.resources
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Release\k_means_image_segmentation.MainForm.ru.resources
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Release\k-means image segmentation.csproj.GenerateResource.Cache
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Release\ru\k-means image segmentation.resources.dll
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Release\k-means image segmentation.exe
+D:\mega cloud\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Release\k-means image segmentation.pdb
