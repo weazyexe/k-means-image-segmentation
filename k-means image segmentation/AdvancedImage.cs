@@ -1,21 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace k_means_image_segmentation
 {
     class AdvancedImage
     {
-        private Bitmap _bmp;        // Изображение
-        private int _height, _width;    // _height - высота изображения, _width - ширина изображения
+        private Bitmap _bmp;        // image
+        private int _height, _width;    // image width & height
         private Random _rand = new Random();
-        private Point[] _centroids;         // Массив координат центроидов
+        private Point[] _centroids;         // centroids array
 
         public AdvancedImage()
         {
@@ -23,7 +17,7 @@ namespace k_means_image_segmentation
         }
 
         /// <summary>
-        /// Загрузка изображения
+        /// Load Image
         /// </summary>
         public void LoadFile(ref PictureBox PicBox)
         {
@@ -44,7 +38,7 @@ namespace k_means_image_segmentation
         }
 
         /// <summary>
-        /// Сохранение изображения
+        /// Save Image
         /// </summary>
         public void SaveFile(ref PictureBox PicBox)
         {
@@ -61,7 +55,7 @@ namespace k_means_image_segmentation
         }
 
         /// <summary>
-        /// Очистка пикчербокса и удаление изображения
+        /// PictureBox clear
         /// </summary>
         public void ClearImage(ref Graphics graph, Color BackColor)
         {
@@ -70,10 +64,10 @@ namespace k_means_image_segmentation
         }
 
         /// <summary>
-        /// Поиск минимального расстояния
+        /// Finding min distance to centroid
         /// </summary>
-        /// <param name="distance">Массив расстояний от пикселя до центроидов</param>
-        /// <param name="k">Количество цветов (кластеров)</param>
+        /// <param name="distance">Distances array</param>
+        /// <param name="k">Just k</param>
         /// <returns></returns>
         private int FindMinDistance(int[] distance, int k)
         {
@@ -89,10 +83,10 @@ namespace k_means_image_segmentation
         }
 
         /// <summary>
-        /// Сегментация изображения на основе алгоритма k-means
+        /// Segmentation himself!
         /// </summary>
-        /// <param name="PicBox">Изображение</param>
-        /// <param name="k">Количество цветов (кластеров)</param>
+        /// <param name="PicBox">PictureBox image</param>
+        /// <param name="k">Just k</param>
         public Bitmap ImageSegmentation(ref PictureBox PicBox, int k)
         {
             _centroids = new Point[k];
@@ -106,16 +100,16 @@ namespace k_means_image_segmentation
                 {
                     for (int i = 0; i < k; i++)
                     {
-                        int r = Math.Abs(_bmp.GetPixel(x, y).R - _bmp.GetPixel(_centroids[i].X, _centroids[i].Y).R);    // Расчёт модулей разности RGB-каналов
+                        int r = Math.Abs(_bmp.GetPixel(x, y).R - _bmp.GetPixel(_centroids[i].X, _centroids[i].Y).R);    // sub module RGB count
                         int g = Math.Abs(_bmp.GetPixel(x, y).G - _bmp.GetPixel(_centroids[i].X, _centroids[i].Y).G);
                         int b = Math.Abs(_bmp.GetPixel(x, y).B - _bmp.GetPixel(_centroids[i].X, _centroids[i].Y).B);
 
-                        distance[i] = (int)(Math.Sqrt(r * r + g * g) + Math.Sqrt(g * g + b * b) + Math.Sqrt(r * r + b * b));    // Расчёт дистанции по Евклиду
+                        distance[i] = (int)(Math.Sqrt(r * r + g * g) + Math.Sqrt(g * g + b * b) + Math.Sqrt(r * r + b * b));    // Euclid count distance
                     }
 
-                    int nearest = FindMinDistance(distance, k);     // Поиск ближайшего цвета
-                    Color clr = _bmp.GetPixel(_centroids[nearest].X, _centroids[nearest].Y);      // Взятие цвета центроида
-                    _bmp.SetPixel(x, y, clr);       // Замена цвета пикселя
+                    int nearest = FindMinDistance(distance, k);     // find the nearest color
+                    Color clr = _bmp.GetPixel(_centroids[nearest].X, _centroids[nearest].Y);      // take centroid color
+                    _bmp.SetPixel(x, y, clr);       // set pixel centroid color
                 }
             }
             return _bmp;

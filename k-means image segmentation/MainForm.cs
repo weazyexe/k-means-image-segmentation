@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace k_means_image_segmentation
 {
     public partial class MainForm : Form
     {
-        Graphics graph;     // Инициализация графики для работы с изображением
-        AdvancedImage img = new AdvancedImage();    // Изображение
-        int k;      // Количество кластеров
+        Graphics graph; 
+        AdvancedImage img = new AdvancedImage();
+        int k; 
 
         public MainForm()
         {
@@ -22,7 +16,11 @@ namespace k_means_image_segmentation
             graph = PicBox.CreateGraphics();
         }
 
-        // Обзор. . .
+        /// <summary>
+        /// Load button click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ImportButton_Click(object sender, EventArgs e)
         {
             try
@@ -31,11 +29,15 @@ namespace k_means_image_segmentation
             }
             catch
             {
-
+                MessageBox.Show("Load file error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        // Сохранить как. . .
+        /// <summary>
+        /// Save as click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveFileButton_Click(object sender, EventArgs e)
         {
             try
@@ -45,7 +47,7 @@ namespace k_means_image_segmentation
             }
             catch (NullReferenceException)
             {
-                MessageBox.Show("Нет изображения для сохранения.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Where an image? Load it.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch
             {
@@ -53,13 +55,21 @@ namespace k_means_image_segmentation
             }
         }
 
-        // Очистить
+        /// <summary>
+        /// Clear button click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ClearButton_Click(object sender, EventArgs e)
         {
             img.ClearImage(ref graph, BackColor);
         }
 
-        // Кластеризировать
+        /// <summary>
+        /// Cluster button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ClusterButton_Click(object sender, EventArgs e)
         {
             try
@@ -71,19 +81,19 @@ namespace k_means_image_segmentation
             }
             catch (FormatException)
             {
-                MessageBox.Show("Некорректный ввод значения k: k не является числом.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Uncorrect k: k is NaN.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (OverflowException)
             {
-                MessageBox.Show("Некорректный ввод значения k: k выходит за границы заданного диапазона (1-30)", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Uncorrect k: k is out of range (1-30).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (NullReferenceException)
             {
-                MessageBox.Show("Для сегментации требуется изображение.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("For segmentation you need an image.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch
             {
-                MessageBox.Show("Неизвестная ошибка.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unknown error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
