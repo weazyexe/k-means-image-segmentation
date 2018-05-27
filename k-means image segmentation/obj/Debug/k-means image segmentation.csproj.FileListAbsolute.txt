@@ -22,3 +22,16 @@ E:\homework\2 курс\1 семестр\Курсовая работа\k-means im
 E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.MainForm.ru.resources
 E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csproj.GenerateResource.Cache
 E:\homework\2 курс\1 семестр\Курсовая работа\k-means image segmentation\k-means image segmentation\obj\Debug\ru\k-means image segmentation.resources.dll
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.exe.config
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.exe
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.pdb
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\bin\Debug\ru\k-means image segmentation.resources.dll
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csprojResolveAssemblyReference.cache
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.MainForm.resources
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.Properties.Resources.resources
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.MainForm.ru.resources
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csproj.GenerateResource.cache
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csproj.CoreCompileInputs.cache
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\ru\k-means image segmentation.resources.dll
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.exe
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.pdb
