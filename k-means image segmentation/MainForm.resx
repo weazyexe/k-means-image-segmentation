@@ -333,24 +333,6 @@
   <metadata name="EditStatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="ClusteringProgressBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 16</value>
-  </data>
-  <data name="ClusteringStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
-  </data>
-  <data name="TimerLabel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="TimerLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>610, 17</value>
-  </data>
-  <data name="TimerLabel.Text" xml:space="preserve">
-    <value>00:00:00</value>
-  </data>
-  <data name="TimerLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
   <data name="EditStatusStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 472</value>
   </data>
@@ -374,6 +356,24 @@
   </data>
   <data name="&gt;&gt;EditStatusStrip.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="ClusteringProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 16</value>
+  </data>
+  <data name="ClusteringStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="TimerLabel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="TimerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>610, 17</value>
+  </data>
+  <data name="TimerLabel.Text" xml:space="preserve">
+    <value>00:00:00</value>
+  </data>
+  <data name="TimerLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
   <metadata name="bgw.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>148, 17</value>
