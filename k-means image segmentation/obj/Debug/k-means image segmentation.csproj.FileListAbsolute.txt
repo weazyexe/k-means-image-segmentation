@@ -35,3 +35,6 @@ E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image seg
 E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\ru\k-means image segmentation.resources.dll
 E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.exe
 E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.pdb
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\bin\Debug\ru-RU\k-means image segmentation.resources.dll
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.MainForm.ru-RU.resources
+E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\ru-RU\k-means image segmentation.resources.dll

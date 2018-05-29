@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace k_means_image_segmentation
 {
-    class AdvancedImage
+    class KMeans : IEditImages
     {
         private Bitmap _bmp;        // image
         private int _height, _width;    // image width & height
         private Random _rand = new Random();
         private Point[] _centroids;         // centroids array
 
-        public AdvancedImage()
+        public KMeans()
         {
 
         }
@@ -19,7 +20,7 @@ namespace k_means_image_segmentation
         /// <summary>
         /// Load Image
         /// </summary>
-        public void LoadFile(ref PictureBox PicBox)
+        public void Load(PictureBox PicBox)
         {
             using (OpenFileDialog dialog = new OpenFileDialog())
             {
@@ -40,7 +41,7 @@ namespace k_means_image_segmentation
         /// <summary>
         /// Save Image
         /// </summary>
-        public void SaveFile(ref PictureBox PicBox)
+        public void Save(PictureBox PicBox)
         {
             using (SaveFileDialog dialog = new SaveFileDialog())
             {
@@ -57,7 +58,7 @@ namespace k_means_image_segmentation
         /// <summary>
         /// PictureBox clear
         /// </summary>
-        public void ClearImage(ref Graphics graph, Color BackColor)
+        public void Clear(Graphics graph, Color BackColor)
         {
             graph.Clear(BackColor);
             _bmp = null;
@@ -87,18 +88,18 @@ namespace k_means_image_segmentation
         /// </summary>
         /// <param name="PicBox">PictureBox image</param>
         /// <param name="k">Just k</param>
-        public Bitmap ImageSegmentation(ref PictureBox PicBox, int k)
+        public Bitmap GetEditedImage(PictureBox PicBox)
         {
-            _centroids = new Point[k];
-            for (int i = 0; i < k; i++)
+            _centroids = new Point[MainForm.k];
+            for (int i = 0; i < MainForm.k; i++)
                 _centroids[i] = new Point(_rand.Next(_width), _rand.Next(_height));
 
-            int[] distance = new int[k];
+            int[] distance = new int[MainForm.k];
             for (int y = 0; y < _height; y++)
             {
-                for (int x = 0; x < _width; x++)
+                for (int x = 0; x < _width; x++) 
                 {
-                    for (int i = 0; i < k; i++)
+                    for (int i = 0; i < MainForm.k; i++) 
                     {
                         int r = Math.Abs(_bmp.GetPixel(x, y).R - _bmp.GetPixel(_centroids[i].X, _centroids[i].Y).R);    // sub module RGB count
                         int g = Math.Abs(_bmp.GetPixel(x, y).G - _bmp.GetPixel(_centroids[i].X, _centroids[i].Y).G);
@@ -106,12 +107,11 @@ namespace k_means_image_segmentation
 
                         distance[i] = (int)(Math.Sqrt(r * r + g * g) + Math.Sqrt(g * g + b * b) + Math.Sqrt(r * r + b * b));    // Euclid count distance
                     }
-
-                    int nearest = FindMinDistance(distance, k);     // find the nearest color
+                    int nearest = FindMinDistance(distance, MainForm.k);     // find the nearest color
                     Color clr = _bmp.GetPixel(_centroids[nearest].X, _centroids[nearest].Y);      // take centroid color
                     _bmp.SetPixel(x, y, clr);       // set pixel centroid color
                 }
-            }
+            }         
             return _bmp;
         }
     }

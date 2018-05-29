@@ -117,262 +117,322 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ClusterCountLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>743, 533</value>
+  <data name="ClusterCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 139</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Введите количество кластеров (k):</value>
+  <data name="ClusterCountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
   </data>
-  <data name="&gt;&gt;ImportButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="ClusterCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SettingsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="ClusterCountLabel.Text" xml:space="preserve">
+    <value>Clusters count (k):</value>
   </data>
-  <data name="&gt;&gt;ClusterButton.Name" xml:space="preserve">
-    <value>ClusterButton</value>
+  <data name="&gt;&gt;ClusterCountLabel.Name" xml:space="preserve">
+    <value>ClusterCountLabel</value>
   </data>
-  <data name="&gt;&gt;PicBox.Name" xml:space="preserve">
-    <value>PicBox</value>
+  <data name="&gt;&gt;ClusterCountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;SaveFileButton.Name" xml:space="preserve">
-    <value>SaveFileButton</value>
+  <data name="&gt;&gt;ClusterCountLabel.Parent" xml:space="preserve">
+    <value>SettingsGroupBox</value>
   </data>
-  <data name="ClusterButton.Text" xml:space="preserve">
-    <value>Кластеризировать</value>
+  <data name="&gt;&gt;ClusterCountLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="KTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 155</value>
   </data>
-  <data name="InputKLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 106</value>
+  <data name="KTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="KTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;KTextBox.Name" xml:space="preserve">
     <value>KTextBox</value>
   </data>
-  <data name="ClearButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;ImportButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PicBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;ImportButton.Name" xml:space="preserve">
-    <value>ImportButton</value>
-  </data>
-  <data name="ClusterButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 40</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ClusterButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="SaveFileButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 64</value>
-  </data>
-  <data name="KTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;SaveFileButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="ClusterButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="&gt;&gt;SaveFileButton.Parent" xml:space="preserve">
-    <value>SettingsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;ClusterButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>SettingsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ClearButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;InputKLabel.Parent" xml:space="preserve">
-    <value>SettingsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;SettingsGroupBox.Name" xml:space="preserve">
-    <value>SettingsGroupBox</value>
-  </data>
   <data name="&gt;&gt;KTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 13</value>
-  </data>
-  <data name="ImportButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 31</value>
-  </data>
-  <data name="&gt;&gt;ClusterButton.Parent" xml:space="preserve">
-    <value>SettingsGroupBox</value>
-  </data>
-  <data name="ClusterButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;SaveFileButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ImportButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 29</value>
-  </data>
-  <data name="KTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 116</value>
-  </data>
-  <data name="PicBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 11</value>
-  </data>
-  <data name="&gt;&gt;PicBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SettingsGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;SettingsGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ImportButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="PicBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;InputKLabel.Name" xml:space="preserve">
-    <value>InputKLabel</value>
-  </data>
-  <data name="&gt;&gt;ClearButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="PicBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>458, 474</value>
-  </data>
-  <data name="SettingsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 11</value>
-  </data>
-  <data name="KTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;ImportButton.Parent" xml:space="preserve">
-    <value>SettingsGroupBox</value>
-  </data>
-  <data name="InputKLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ClearButton.Name" xml:space="preserve">
-    <value>ClearButton</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="SettingsGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="ClearButton.Text" xml:space="preserve">
-    <value>Очистить</value>
-  </data>
-  <data name="&gt;&gt;InputKLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ClearButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PicBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 100</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>k-means image segmentation</value>
-  </data>
-  <data name="&gt;&gt;PicBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ClearButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 29</value>
-  </data>
-  <data name="SaveFileButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
   </data>
   <data name="&gt;&gt;KTextBox.Parent" xml:space="preserve">
     <value>SettingsGroupBox</value>
   </data>
-  <data name="ImportButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;KTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="SettingsGroupBox.Text" xml:space="preserve">
-    <value>Настройки</value>
+  <data name="SaveFileButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 69</value>
   </data>
-  <data name="&gt;&gt;InputKLabel.ZOrder" xml:space="preserve">
+  <data name="SaveFileButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 29</value>
+  </data>
+  <data name="SaveFileButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="SaveFileButton.Text" xml:space="preserve">
+    <value>Save as...</value>
+  </data>
+  <data name="&gt;&gt;SaveFileButton.Name" xml:space="preserve">
+    <value>SaveFileButton</value>
+  </data>
+  <data name="&gt;&gt;SaveFileButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SaveFileButton.Parent" xml:space="preserve">
+    <value>SettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;SaveFileButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="ClusterButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
   <data name="ClusterButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 413</value>
+    <value>15, 381</value>
   </data>
-  <data name="SettingsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 469</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ClusterButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="KTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+  <data name="ClusterButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 40</value>
   </data>
-  <data name="&gt;&gt;SettingsGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="ClusterButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>727, 494</value>
+  <data name="ClusterButton.Text" xml:space="preserve">
+    <value>CLUSTER IT</value>
   </data>
-  <data name="ImportButton.Text" xml:space="preserve">
-    <value>Обзор...</value>
+  <data name="&gt;&gt;ClusterButton.Name" xml:space="preserve">
+    <value>ClusterButton</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ClusterButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ClusterButton.Parent" xml:space="preserve">
+    <value>SettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ClusterButton.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="ClearButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>122, 31</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ClearButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="ClearButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 29</value>
+  </data>
+  <data name="ClearButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ClearButton.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;ClearButton.Name" xml:space="preserve">
+    <value>ClearButton</value>
+  </data>
+  <data name="&gt;&gt;ClearButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ClearButton.Parent" xml:space="preserve">
     <value>SettingsGroupBox</value>
   </data>
-  <data name="&gt;&gt;SettingsGroupBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ClearButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ImportButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 31</value>
+  </data>
+  <data name="ImportButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="ImportButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 29</value>
+  </data>
+  <data name="ImportButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;KTextBox.ZOrder" xml:space="preserve">
+  <data name="ImportButton.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="&gt;&gt;ImportButton.Name" xml:space="preserve">
+    <value>ImportButton</value>
+  </data>
+  <data name="&gt;&gt;ImportButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ImportButton.Parent" xml:space="preserve">
+    <value>SettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ImportButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SettingsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 11</value>
+  </data>
+  <data name="SettingsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="SettingsGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="SettingsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 440</value>
+  </data>
+  <data name="SettingsGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;ClusterButton.ZOrder" xml:space="preserve">
+  <data name="SettingsGroupBox.Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="&gt;&gt;SettingsGroupBox.Name" xml:space="preserve">
+    <value>SettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;SettingsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SettingsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SettingsGroupBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="PicBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 11</value>
+  </data>
+  <data name="PicBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PicBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>458, 440</value>
+  </data>
+  <data name="PicBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PicBox.Name" xml:space="preserve">
+    <value>PicBox</value>
+  </data>
+  <data name="&gt;&gt;PicBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PicBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PicBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="EditStatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="ClusteringProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 16</value>
+  </data>
+  <data name="ClusteringStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="TimerLabel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="TimerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>610, 17</value>
+  </data>
+  <data name="TimerLabel.Text" xml:space="preserve">
+    <value>00:00:00</value>
+  </data>
+  <data name="TimerLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="EditStatusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 472</value>
+  </data>
+  <data name="EditStatusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>727, 22</value>
+  </data>
+  <data name="EditStatusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="EditStatusStrip.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;EditStatusStrip.Name" xml:space="preserve">
+    <value>EditStatusStrip</value>
+  </data>
+  <data name="&gt;&gt;EditStatusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EditStatusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;EditStatusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="bgw.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>148, 17</value>
+  </metadata>
+  <metadata name="tm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>223, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ru</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>727, 494</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>743, 533</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>k-means image segmentation</value>
+  </data>
+  <data name="&gt;&gt;ClusteringProgressBar.Name" xml:space="preserve">
+    <value>ClusteringProgressBar</value>
+  </data>
+  <data name="&gt;&gt;ClusteringProgressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ClusteringStatusLabel.Name" xml:space="preserve">
+    <value>ClusteringStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;ClusteringStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TimerLabel.Name" xml:space="preserve">
+    <value>TimerLabel</value>
+  </data>
+  <data name="&gt;&gt;TimerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bgw.Name" xml:space="preserve">
+    <value>bgw</value>
+  </data>
+  <data name="&gt;&gt;bgw.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tm.Name" xml:space="preserve">
+    <value>tm</value>
+  </data>
+  <data name="&gt;&gt;tm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

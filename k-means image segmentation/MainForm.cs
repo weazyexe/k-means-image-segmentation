@@ -1,5 +1,7 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace k_means_image_segmentation
@@ -7,8 +9,9 @@ namespace k_means_image_segmentation
     public partial class MainForm : Form
     {
         Graphics graph; 
-        AdvancedImage img = new AdvancedImage();
-        int k; 
+        KMeans img = new KMeans();
+        public static int k;
+        DateTime timer = new DateTime();
 
         public MainForm()
         {
@@ -25,7 +28,9 @@ namespace k_means_image_segmentation
         {
             try
             {
-                img.LoadFile(ref PicBox);
+                img.Load(PicBox);
+                TimerLabel.Text = "00:00:00";
+                ClusteringStatusLabel.Text = "";
             }
             catch
             {
@@ -43,7 +48,7 @@ namespace k_means_image_segmentation
             try
             {
                 if (PicBox.Image == null) throw new NullReferenceException();
-                img.SaveFile(ref PicBox);
+                img.Save(PicBox);
             }
             catch (NullReferenceException)
             {
@@ -62,7 +67,10 @@ namespace k_means_image_segmentation
         /// <param name="e"></param>
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            img.ClearImage(ref graph, BackColor);
+            img.Clear(graph, BackColor);
+            PicBox.Image = null;
+            TimerLabel.Text = "00:00:00";
+            ClusteringStatusLabel.Text = "";
         }
 
         /// <summary>
@@ -77,7 +85,15 @@ namespace k_means_image_segmentation
                 k = int.Parse(KTextBox.Text);
                 if (k <= 0 || k > 30) throw new OverflowException();
                 if (PicBox.Image == null) throw new NullReferenceException();
-                PicBox.Image = img.ImageSegmentation(ref PicBox, k);
+
+                ClusteringProgressBar.Value = 0;
+                ClusteringProgressBar.Maximum = 100;
+                ClusteringProgressBar.Style = ProgressBarStyle.Marquee;
+                ClusteringStatusLabel.Text = "Clustering...";
+                tm.Start();
+                timer = new DateTime();
+
+                bgw.RunWorkerAsync();
             }
             catch (FormatException)
             {
@@ -91,10 +107,43 @@ namespace k_means_image_segmentation
             {
                 MessageBox.Show("For segmentation you need an image.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Unknown error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unknown error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        /// <summary>
+        /// Thread
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bgw_DoWork(object sender, DoWorkEventArgs e)
+        {
+            PicBox.Image = img.GetEditedImage(PicBox);
+        }
+
+        /// <summary>
+        /// Then thread code ends
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bgw_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            ClusteringProgressBar.Style = ProgressBarStyle.Blocks;
+            ClusteringStatusLabel.Text = "Complete!";
+            tm.Stop();
+        }
+
+        /// <summary>
+        /// Status bar time refresh
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tm_Tick(object sender, EventArgs e)
+        {
+            timer = timer.AddSeconds(1);
+            TimerLabel.Text = (timer.Hour >= 10 ? timer.Hour.ToString() : "0" + timer.Hour.ToString()) + ":" + (timer.Minute >= 10 ? timer.Minute.ToString() : "0" + timer.Minute.ToString()) + ":" + (timer.Second >= 10 ? timer.Second.ToString() : "0" + timer.Second.ToString());
         }
     }
 }
