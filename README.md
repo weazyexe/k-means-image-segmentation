@@ -6,8 +6,10 @@ Image segmentation based k-means clustering algorithm.
 - Wait sometime (depend by image size)
 - Get result! Save it or load new image
 
-![gui screen](https://imgur.com/LS90Pp3.png)
+![gui screen](https://i.imgur.com/Qs9piyC.png)
 
-![gui screen](https://i.imgur.com/u6SQ5Cq.png)
+![gui screen](https://i.imgur.com/6TcPuUj.png)
+
+![gui screen](https://i.imgur.com/adIDqBV.png)
 
 dev. via Microsoft Visual Studio 2017
