@@ -32,3 +32,13 @@ E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image seg
 E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csproj.CoreCompileInputs.cache
 E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.exe
 E:\cloud\applications\visual studio\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.pdb
+D:\repos\k-means-image-segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.exe.config
+D:\repos\k-means-image-segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.exe
+D:\repos\k-means-image-segmentation\k-means image segmentation\bin\Debug\k-means image segmentation.pdb
+D:\repos\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csprojAssemblyReference.cache
+D:\repos\k-means-image-segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.MainForm.resources
+D:\repos\k-means-image-segmentation\k-means image segmentation\obj\Debug\k_means_image_segmentation.Properties.Resources.resources
+D:\repos\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csproj.GenerateResource.cache
+D:\repos\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.csproj.CoreCompileInputs.cache
+D:\repos\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.exe
+D:\repos\k-means-image-segmentation\k-means image segmentation\obj\Debug\k-means image segmentation.pdb

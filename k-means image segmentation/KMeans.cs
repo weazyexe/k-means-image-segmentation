@@ -5,63 +5,39 @@ using System.Windows.Forms;
 
 namespace k_means_image_segmentation
 {
-    class KMeans : IEditImages
+    class KMeans
     {
-        private Bitmap _bmp;        // image
-        private int _height, _width;    // image width & height
-        private Random _rand = new Random();
-        private Point[] _centroids;         // centroids array
-
-        public KMeans()
-        {
-
-        }
-
         /// <summary>
-        /// Load Image
+        /// Segmentation himself!
         /// </summary>
-        public void Load(PictureBox PicBox)
+        /// <param name="PicBox">PictureBox image</param>
+        /// <param name="k">Just k</param>
+        public Bitmap SegmentImage(Bitmap bitmap, int k)
         {
-            using (OpenFileDialog dialog = new OpenFileDialog())
+            var rand = new Random();
+            var centroids = new Point[k];
+            for (int i = 0; i < k; i++)
+                centroids[i] = new Point(rand.Next(bitmap.Width), rand.Next(bitmap.Height));
+
+            int[] distance = new int[k];
+            for (int y = 0; y < bitmap.Height; y++)
             {
-                dialog.Title = "Open image";
-                dialog.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
-
-                if (dialog.ShowDialog() == DialogResult.OK)
+                for (int x = 0; x < bitmap.Width; x++) 
                 {
-                    PicBox.SizeMode = PictureBoxSizeMode.Zoom;
-                    PicBox.Image = new Bitmap(dialog.FileName);
-                    _bmp = new Bitmap(PicBox.Image, PicBox.Image.Width, PicBox.Image.Height);
+                    for (int i = 0; i < k; i++) 
+                    {
+                        var r = Math.Abs(bitmap.GetPixel(x, y).R - bitmap.GetPixel(centroids[i].X, centroids[i].Y).R);    // sub module RGB count
+                        var g = Math.Abs(bitmap.GetPixel(x, y).G - bitmap.GetPixel(centroids[i].X, centroids[i].Y).G);
+                        var b = Math.Abs(bitmap.GetPixel(x, y).B - bitmap.GetPixel(centroids[i].X, centroids[i].Y).B);
+
+                        distance[i] = (int)(Math.Sqrt(r * r + g * g) + Math.Sqrt(g * g + b * b) + Math.Sqrt(r * r + b * b));    // Euclid count distance
+                    }
+                    var nearest = FindMinDistance(distance, k);     // find the nearest color
+                    var clr = bitmap.GetPixel(centroids[nearest].X, centroids[nearest].Y);      // take centroid color
+                    bitmap.SetPixel(x, y, clr);       // set pixel centroid color
                 }
-            }
-            _height = _bmp.Height;
-            _width = _bmp.Width;
-        }
-
-        /// <summary>
-        /// Save Image
-        /// </summary>
-        public void Save(PictureBox PicBox)
-        {
-            using (SaveFileDialog dialog = new SaveFileDialog())
-            {
-                dialog.Title = "Open image";
-                dialog.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
-
-                if (dialog.ShowDialog() == DialogResult.OK)
-                {
-                    _bmp.Save(dialog.FileName);
-                }
-            }
-        }
-
-        /// <summary>
-        /// PictureBox clear
-        /// </summary>
-        public void Clear(Graphics graph, Color BackColor)
-        {
-            graph.Clear(BackColor);
-            _bmp = null;
+            }         
+            return bitmap;
         }
 
         /// <summary>
@@ -81,38 +57,6 @@ namespace k_means_image_segmentation
                     minIndex = i;
                 }
             return minIndex;
-        }
-
-        /// <summary>
-        /// Segmentation himself!
-        /// </summary>
-        /// <param name="PicBox">PictureBox image</param>
-        /// <param name="k">Just k</param>
-        public Bitmap GetEditedImage(PictureBox PicBox)
-        {
-            _centroids = new Point[MainForm.k];
-            for (int i = 0; i < MainForm.k; i++)
-                _centroids[i] = new Point(_rand.Next(_width), _rand.Next(_height));
-
-            int[] distance = new int[MainForm.k];
-            for (int y = 0; y < _height; y++)
-            {
-                for (int x = 0; x < _width; x++) 
-                {
-                    for (int i = 0; i < MainForm.k; i++) 
-                    {
-                        int r = Math.Abs(_bmp.GetPixel(x, y).R - _bmp.GetPixel(_centroids[i].X, _centroids[i].Y).R);    // sub module RGB count
-                        int g = Math.Abs(_bmp.GetPixel(x, y).G - _bmp.GetPixel(_centroids[i].X, _centroids[i].Y).G);
-                        int b = Math.Abs(_bmp.GetPixel(x, y).B - _bmp.GetPixel(_centroids[i].X, _centroids[i].Y).B);
-
-                        distance[i] = (int)(Math.Sqrt(r * r + g * g) + Math.Sqrt(g * g + b * b) + Math.Sqrt(r * r + b * b));    // Euclid count distance
-                    }
-                    int nearest = FindMinDistance(distance, MainForm.k);     // find the nearest color
-                    Color clr = _bmp.GetPixel(_centroids[nearest].X, _centroids[nearest].Y);      // take centroid color
-                    _bmp.SetPixel(x, y, clr);       // set pixel centroid color
-                }
-            }         
-            return _bmp;
         }
     }
 }

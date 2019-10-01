@@ -10,7 +10,7 @@ namespace k_means_image_segmentation
     {
         Graphics graph; 
         KMeans img = new KMeans();
-        public static int k;
+        public int k;
         DateTime timer = new DateTime();
 
         public MainForm()
@@ -28,7 +28,18 @@ namespace k_means_image_segmentation
         {
             try
             {
-                img.Load(PicBox);
+                using (OpenFileDialog dialog = new OpenFileDialog())
+                {
+                    dialog.Title = "Open image";
+                    dialog.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+
+                    if (dialog.ShowDialog() == DialogResult.OK)
+                    {
+                        PicBox.SizeMode = PictureBoxSizeMode.Zoom;
+                        PicBox.Image = new Bitmap(dialog.FileName);
+                        /*_bmp = new Bitmap(PicBox.Image, PicBox.Image.Width, PicBox.Image.Height);*/
+                    }
+                }
                 TimerLabel.Text = "00:00:00";
                 ClusteringStatusLabel.Text = "";
             }
@@ -48,7 +59,17 @@ namespace k_means_image_segmentation
             try
             {
                 if (PicBox.Image == null) throw new NullReferenceException();
-                img.Save(PicBox);
+
+                using (SaveFileDialog dialog = new SaveFileDialog())
+                {
+                    dialog.Title = "Open image";
+                    dialog.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+
+                    if (dialog.ShowDialog() == DialogResult.OK)
+                    {
+                        PicBox.Image.Save(dialog.FileName);
+                    }
+                }
             }
             catch (NullReferenceException)
             {
@@ -67,7 +88,7 @@ namespace k_means_image_segmentation
         /// <param name="e"></param>
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            img.Clear(graph, BackColor);
+            graph.Clear(BackColor);
             PicBox.Image = null;
             TimerLabel.Text = "00:00:00";
             ClusteringStatusLabel.Text = "";
@@ -120,7 +141,7 @@ namespace k_means_image_segmentation
         /// <param name="e"></param>
         private void bgw_DoWork(object sender, DoWorkEventArgs e)
         {
-            PicBox.Image = img.GetEditedImage(PicBox);
+            PicBox.Image = img.SegmentImage(new Bitmap(PicBox.Image), k);
         }
 
         /// <summary>
@@ -144,6 +165,44 @@ namespace k_means_image_segmentation
         {
             timer = timer.AddSeconds(1);
             TimerLabel.Text = (timer.Hour >= 10 ? timer.Hour.ToString() : "0" + timer.Hour.ToString()) + ":" + (timer.Minute >= 10 ? timer.Minute.ToString() : "0" + timer.Minute.ToString()) + ":" + (timer.Second >= 10 ? timer.Second.ToString() : "0" + timer.Second.ToString());
+        }
+
+        /// <summary>
+        /// Load Image
+        /// </summary>
+        public void Load()
+        {
+            using (OpenFileDialog dialog = new OpenFileDialog())
+            {
+                dialog.Title = "Open image";
+                dialog.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    PicBox.SizeMode = PictureBoxSizeMode.Zoom;
+                    PicBox.Image = new Bitmap(dialog.FileName);
+                    /*_bmp = new Bitmap(PicBox.Image, PicBox.Image.Width, PicBox.Image.Height);*/
+                }
+            }
+            //_height = _bmp.Height;
+            //_width = _bmp.Width;
+        }
+
+        /// <summary>
+        /// Save Image
+        /// </summary>
+        public void Save(PictureBox PicBox)
+        {
+            using (SaveFileDialog dialog = new SaveFileDialog())
+            {
+                dialog.Title = "Open image";
+                dialog.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    //_bmp.Save(dialog.FileName);
+                }
+            }
         }
     }
 }
